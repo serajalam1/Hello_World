@@ -1,0 +1,36 @@
+{
+	"name": "DestinationDataset_rrn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10,
+				"scale": 255
+			},
+			{
+				"name": "Name",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "Age",
+				"type": "int",
+				"precision": 10,
+				"scale": 255
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Table1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

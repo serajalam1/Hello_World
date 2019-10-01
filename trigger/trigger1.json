@@ -1,0 +1,30 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_rrn",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2019-09-30T00:40:00Z",
+				"endTime": "2019-10-01T00:40:00Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"hours": [
+						20
+					]
+				}
+			}
+		}
+	}
+}
